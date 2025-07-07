@@ -1,0 +1,57 @@
+<header class="bg-red-500 text-white p-4 shadow-md">
+<nav class="container mx-auto flex justify-around items-center">
+  <ul class="flex flex-1 justify-evenly items-center">
+    <li class="mx-2">
+      <% const isIndex = currentPage === 'index' ? 'bg-red-400' : 'hover:bg-red-400'; %>
+      <a href="/" class="<%= isIndex %> py-2 px-4 rounded transition duration-300">airbnb</a>
+    </li>
+
+    <% if (isLoggedIn) { %>
+      <% if(user && user.userType === 'guest') { %>
+        <li class="mx-2">
+          <% const isHome = currentPage === 'Home' ? 'bg-red-400' : 'hover:bg-red-400'; %>
+          <a href="/homes" class="<%= isHome %> py-2 px-4 rounded transition duration-300">Homes-List</a>
+        </li>
+        <li class="mx-2">
+          <% const isFav = currentPage === 'favourites' ? 'bg-red-400' : 'hover:bg-red-400'; %>
+          <a href="/favourites" class="<%= isFav %> py-2 px-4 rounded transition duration-300">Favourites</a>
+        </li>
+        <li class="mx-2">
+          <% const isBooking = currentPage === 'bookings' ? 'bg-red-400' : 'hover:bg-red-400'; %>
+          <a href="/bookings" class="<%= isBooking %> py-2 px-4 rounded transition duration-300">Bookings</a>
+        </li>
+      <% } else { %>
+        <li class="mx-2">
+          <% const isHostList = currentPage === 'host-homes' ? 'bg-red-400' : 'hover:bg-red-400'; %>
+          <a href="/host/host-home-list" class="<%= isHostList %> py-2 px-4 rounded transition duration-300">Host Homes</a>
+        </li>
+        <li class="mx-2">
+          <% const isAddHome = currentPage === 'addHome' ? 'bg-red-400' : 'hover:bg-red-400'; %>
+          <a href="/host/add-home" class="<%= isAddHome %> py-2 px-4 rounded transition duration-300">Add Home</a>
+        </li>
+      <% } %>
+    <% } %>
+
+    <% if (!isLoggedIn) { %>
+      <li class="mx-2">
+        <% const isSignup = currentPage === 'signup' ? 'bg-red-400' : 'hover:bg-red-400'; %>
+        <a href="/signup" class="<%= isSignup %> py-2 px-4 rounded transition duration-300">Signup</a>
+      </li>
+      <li class="mx-2">
+        <% const isLogin = currentPage === 'login' ? 'bg-red-400' : 'hover:bg-red-400'; %>
+        <a href="/login" class="<%= isLogin %> py-2 px-4 rounded transition duration-300">Login</a>
+      </li>
+    <% } else { %>
+      <li class="mx-2">
+        <form action="/logout" method="post">
+          <button
+            type="submit"
+            class="bg-red-500 hover:bg-red-400 text-white py-2 px-4 rounded transition duration-300"
+          >Logout</button>
+        </form>
+      </li>
+    <% } %>
+  </ul>
+</nav>
+
+</header>
