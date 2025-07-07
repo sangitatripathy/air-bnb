@@ -24,6 +24,30 @@ A full-stack web application that replicates the core features of Airbnb — all
 - 📦 MongoDB used for storing home listings and user data.
 - ⚡ Tailwind CSS for fast and modern UI development.
 
+## 📸 Screenshots
+
+### Login Page
+
+![Login](https://github.com/sangitatripathy/air-bnb/blob/fdfc9392f6836156628f77054650293b324c484a/public/screenshots/Screenshot%20(96).png)
+
+---
+
+### 🏠Home List
+
+![Home Listings](https://github.com/sangitatripathy/air-bnb/blob/fdfc9392f6836156628f77054650293b324c484a/public/screenshots/Screenshot%20(97).png)
+
+---
+
+### ❤️Favourite List
+
+![Favourite List](https://github.com/sangitatripathy/air-bnb/blob/fdfc9392f6836156628f77054650293b324c484a/public/screenshots/Screenshot%20(98).png)
+
+---
+
+### 📝 Host Add Home
+
+![Add Home](https://github.com/sangitatripathy/air-bnb/blob/fdfc9392f6836156628f77054650293b324c484a/public/screenshots/Screenshot%20(99).png)
+
 ---
 
 ## 🛠 Installation
