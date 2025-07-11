@@ -54,5 +54,5 @@ A full-stack web application that replicates the core features of Airbnb — all
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/airbnb-clone.git
-   cd airbnb-clone
+   git clone https://github.com/sangitatripathy/air-bnb.git
+   cd air-bnb
